@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formatação Semântica</title>
+</head>
+<body>
+	<h1>Exemplo de semântica</h1>
+	<p>Anteriormente para dar ênfase em um endereço usávamos a tag u. <br> Ex. Eu moro na <u>Avenida X, 130</u></p>
+	<p>Já no HTML5 semântica, utilizamos a tag address. <br> Ex: Eu moro na <address> Avenida X, 130 </address></p>
+
+	<h2>Negrito / Destaque</h2>
+	<p>Quando quisermos um <b>texto em negrito</b> utilizávamos a tag B (não semântica).</p>
+	<p>Já quando tivermos um <strong> termo em destaque.</strong> utilizamos a tag strong (semântica).</p>
+
+<h2>Itálico / Ênfase</h2>
+<p> Nesta frase, temos um <i>termo em itálico</i> com a tag I (não semântica).</p>
+<p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica).</p>
+
+<h2>Texto marcado</h2>
+<p>Podemos criar também <mark>um texto marcado</mark> utilizando a tag MARK.
+<p>E no outro parágrafo, <mark style="background-color: springgreen;"> outro texto marcado.</mark></p>
+
+<h2>Textos grandes e pequenos.</h2>
+<p>Estamos criando um <big>um texto grande</big> e <small>um texto pequeno</small> utilizando as tags big e small.</p>
+
+<h2>Texto deletado</h2>
+<p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deveser lido, mas não considerado.</p>
+
+<h2>Texto inserido</h2>
+<p>Podemos marcar um texto <ins>como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois.</p>
+
+<h2>Texto sobrescrito</h2>
+<p>Para inserir coisas do tipo x<sup>20</sup> + 3, usamos a tag SUP.</p>
+<h2>Texto subscrito</h2>
+<p>Para insrir coisas do tipo H<sub>2</sub>O utilizamos a tag SUB.</p>
+
+<h2>Código-fonte</h2>
+<p>O comando <code>document.getElementById('teste')</code> é excrito em linguagem JavaScript.</p>
+
+<h3>Pré formatação</h3>
+<pre>
+<code>
+	local function novo ()
+		if 0 == 2 then
+			display.remove ()
+		else
+			morto = true
+		end
+	end
+</code>
+</pre>
+ 
+<h2>Citações</h2>
+<p>Como diria o pai de um amigo meu: <q>O computador é um burro muito rápido.</q></p>
+<h3>Citações completas</h3>
+<p>Segundo Maurício Samy Silva no seu livro Dundamentos de HTML5 e CSS3:</p>
+<blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">HTML é a sigla em inglês para HyperText Markup Language, que, em português, significa linguadem para marcação de hipertexto.</blockquote>
+
+<h2>Abreviações</h2>
+<p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+
+<h2>Textos invertidos</h2>
+
+<p><bdo dir="rtl"> Este texto está invertido.</bdo></p>
+</body>
+</html>
