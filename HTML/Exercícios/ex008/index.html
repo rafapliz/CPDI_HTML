@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas, audio e vídeo</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+<p>Aumente e diminua o tamanho do seu navegador e veja como as imagens se comportam.</p>
+    
+<picture>
+<source media="(max-width: 750px)"
+srcset="imagens/foto-p.png" type="image/png">
+
+<source media="(max-width: 1050px)"
+srcset="imagens/foto-m.png" type="image/png">
+
+<img src="imagens/foto-g.png" alt="Imagem flexível">
+</picture>
+
+<h1>Reproduzindo áudio</h1>
+
+<audio src="midia/pray.mp3" controls autoplay></audio>
+
+<audio preload="metadata" controls loop>
+<source src="midia/pray.mp3" type="audio/mpeg">
+
+<p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/pray.mp3">clique aqui para baixar o arquivo MP3</a></p>
+</audio>
+
+<h3>Indica se o áudio será ou não pré-carregado e aceita 3 valores:</h3>
+<ul>
+<li>metadata - carrega apenas as informações sobre o arquivo (tamanho, tempo, informações de direitos autorais, etc.)</li>
+<li>none - não vai carregar nada até dar play.</li>
+<li>auto - é o padrão, carrega o arquivo de áudio assim que a página for carregada</li>
+</ul>
+
+<h1>Incluindo vídeos</h1>
+<h2>Vídeos hospedados localmente</h2>
+
+<video width="300" poster="imagens/foto-m.png" controls autoplay>
+<source src="meu-video.webm" type="video/webm">
+<source src="meu-video.mp4" type="video/mp4">
+<source src="meu-video.ogv" type="video/ogg">
+
+<p>Infelizmente seu navegador não conseguiu carregar o vídeo.</p>
+
+</video>
+
+<h2>Vídeos hospedados externamente</h2>
+<h3>YouTube</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ciGNT2vwOVU?si=wOrhdJaZi5jgWiCg&amp;start=714" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<h3>Vimeo</h3>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/786994169?h=24a7662d29&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+</body>
+</html>
