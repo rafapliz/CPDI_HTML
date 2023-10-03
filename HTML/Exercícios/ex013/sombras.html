@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+</head>
+<style>
+    body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: dimgray;
+    margin: 0px;
+    }
+    header{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+    nav{
+        background-color: #525252;
+        padding: 3px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.884);
+        } 
+        /* sombra: 
+        1 - deslocamento horizontal (o quanto a sombra vai andar para a direita)
+        2 - deslocamento vertical (o quanto anda para baixo, negativo para cima),
+        3 - blur (espalhamento)
+        4 - Cor    */
+    nav > a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 15px;
+        margin-left: 15px;
+            }
+    nav > a:hover {
+        text-decoration: underline;
+        }
+    main{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+    article{
+        background-color: lightgray;
+        padding: 5px;
+    }
+    article > aside {
+        background-color: #b4b3b3;
+        padding: 5px;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 4px;
+        margin: 0px;
+    }
+    footer > p {
+        margin: 0px;
+    }
+
+</style>
+<body>
+ <header> <!-- Cabeçalho -->
+    <h1>Meu site</h1>
+    <nav> <!-- Determina que existem links de navegação pelo site -->
+        <a href="#">Home</a>
+        <a href="#">Sobre nós</a>
+        <a href="#">Contato</a>
+        <a href="#">Catálogo</a>
+    </nav>
+ </header>
+    <main> <!-- Delimita o conteúdo principal do site-->
+        <section id="assuntos"> <!-- Delimita uma seção do site -->
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit repellendus sit quasi atque, accusantium inventore facilis cupiditate mollitia eveniet id asperiores vero debitis fuga. Adipisci dolorem animi error quibusdam illo!</p>
+        </section>
+        <section id="noticias">
+          <article> <!-- Conteúdo que pode ser lido de forma independente -->
+            <h2>Notícia sobre tecnologia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nesciunt ipsam inventore similique libero qui facere culpa est aspernatur reiciendis eaque perferendis minus consequuntur ipsa at, saepe molestiae praesentium numquam?</p>
+            <aside>
+                <p>Conteúdo relativo ao artigo, como por exemplo o autor.</p>
+            </aside>
+          </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Rafael Liz</p>
+    </footer>
+</body>
+</html>
